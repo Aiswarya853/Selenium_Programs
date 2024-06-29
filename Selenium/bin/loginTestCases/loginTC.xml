@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name ="Login Suite" >
+<test name ="CrtPassword">
+<parameter name ="username" value="admin1"></parameter>
+<parameter name ="password" value="admin123"></parameter>
+<classes>
+<class name = "loginTestCases.CrtPassword"></class>
+</classes>
+</test>
+<test name ="BothInCrt">
+<parameter name ="username" value="admin1"></parameter>
+<parameter name ="password" value="admin1234 "></parameter>
+<classes>
+<class name = "loginTestCases.BothInCrt"></class>
+</classes>
+</test>
+<test name ="BothCrt">
+<parameter name ="username" value="Admin"></parameter>
+<parameter name ="password" value="admin123"></parameter>
+<classes>
+<class name = "loginTestCases.BothCrt"></class>
+</classes>
+</test>
+<test name="CrtusrName">
+<parameter name ="username" value="Admin"></parameter>
+<parameter name ="password" value="admin1234"></parameter>
+<classes>
+<class name = "loginTestCases.CrtusrName"></class>
+</classes>
+</test>
+</suite>

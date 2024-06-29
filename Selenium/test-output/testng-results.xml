@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-06-02T22:44:29 IST" name="Login Suite" finished-at="2024-06-02T22:46:17 IST" duration-ms="107896">
+    <groups>
+    </groups>
+    <test started-at="2024-06-02T22:44:29 IST" name="CrtPassword" finished-at="2024-06-02T22:44:56 IST" duration-ms="26808">
+      <class name="loginTestCases.CrtPassword">
+        <test-method signature="loginWithCrtPassword(java.lang.String,java.lang.String)[pri:0, instance:loginTestCases.CrtPassword@34a3d150]" started-at="2024-06-02T22:44:29 IST" name="loginWithCrtPassword" finished-at="2024-06-02T22:44:56 IST" duration-ms="26777" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithCrtPassword -->
+      </class> <!-- loginTestCases.CrtPassword -->
+    </test> <!-- CrtPassword -->
+    <test started-at="2024-06-02T22:44:56 IST" name="BothInCrt" finished-at="2024-06-02T22:45:24 IST" duration-ms="28751">
+      <class name="loginTestCases.BothInCrt">
+        <test-method signature="bothInCrt(java.lang.String,java.lang.String)[pri:0, instance:loginTestCases.BothInCrt@217ed35e]" started-at="2024-06-02T22:44:56 IST" name="bothInCrt" finished-at="2024-06-02T22:45:24 IST" duration-ms="28745" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin1234 ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bothInCrt -->
+      </class> <!-- loginTestCases.BothInCrt -->
+    </test> <!-- BothInCrt -->
+    <test started-at="2024-06-02T22:45:24 IST" name="BothCrt" finished-at="2024-06-02T22:45:49 IST" duration-ms="24234">
+      <class name="loginTestCases.BothCrt">
+        <test-method signature="bothCrt(java.lang.String,java.lang.String)[pri:0, instance:loginTestCases.BothCrt@662ac478]" started-at="2024-06-02T22:45:24 IST" name="bothCrt" finished-at="2024-06-02T22:45:49 IST" duration-ms="24229" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bothCrt -->
+      </class> <!-- loginTestCases.BothCrt -->
+    </test> <!-- BothCrt -->
+    <test started-at="2024-06-02T22:45:49 IST" name="CrtusrName" finished-at="2024-06-02T22:46:17 IST" duration-ms="28027">
+      <class name="loginTestCases.CrtusrName">
+        <test-method signature="loginWithCrtUsrName(java.lang.String,java.lang.String)[pri:0, instance:loginTestCases.CrtusrName@233795b6]" started-at="2024-06-02T22:45:49 IST" name="loginWithCrtUsrName" finished-at="2024-06-02T22:46:17 IST" duration-ms="28023" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithCrtUsrName -->
+      </class> <!-- loginTestCases.CrtusrName -->
+    </test> <!-- CrtusrName -->
+  </suite> <!-- Login Suite -->
+</testng-results>

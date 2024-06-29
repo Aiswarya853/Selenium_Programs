@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Login Suite]">
+  <test thread-count="5" name="CrtPassword(failed)">
+    <parameter name="password " value="admin123"/>
+    <parameter name="username " value="admin1"/>
+    <classes>
+      <class name="loginTestCases.CrtPassword">
+        <methods>
+          <include name="loginWithCrtPassword"/>
+        </methods>
+      </class> <!-- loginTestCases.CrtPassword -->
+    </classes>
+  </test> <!-- CrtPassword(failed) -->
+  <test thread-count="5" name="BothInCrt(failed)">
+    <parameter name="password " value="admin1234 "/>
+    <parameter name="username" value="admin1"/>
+    <classes>
+      <class name="loginTestCases.BothInCrt">
+        <methods>
+          <include name="bothInCrt"/>
+        </methods>
+      </class> <!-- loginTestCases.BothInCrt -->
+    </classes>
+  </test> <!-- BothInCrt(failed) -->
+  <test thread-count="5" name="BothCrt(failed)">
+    <parameter name="password " value="admin123"/>
+    <parameter name="username" value="Admin"/>
+    <classes>
+      <class name="loginTestCases.BothCrt">
+        <methods>
+          <include name="bothCrt"/>
+        </methods>
+      </class> <!-- loginTestCases.BothCrt -->
+    </classes>
+  </test> <!-- BothCrt(failed) -->
+  <test thread-count="5" name="CrtusrName(failed)">
+    <parameter name="password " value="admin1234"/>
+    <parameter name="username " value="Admin"/>
+    <classes>
+      <class name="loginTestCases.CrtusrName">
+        <methods>
+          <include name="loginWithCrtUsrName"/>
+        </methods>
+      </class> <!-- loginTestCases.CrtusrName -->
+    </classes>
+  </test> <!-- CrtusrName(failed) -->
+</suite> <!-- Failed suite [Login Suite] -->

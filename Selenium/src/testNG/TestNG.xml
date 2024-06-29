@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<suite name ="Test suite" verbose ="2">
+<test name ="Test Cases">
+
+<groups>
+<run>
+<include name ="Moto"></include>
+<include name = "Vivo"></include>
+</run>
+</groups>
+<classes>
+<!--  --><class name = "testNG.dependanciesManagement"></class>
+<class name = "testNG.GroupingExample"></class>
+<class name = "testNG.DriveACar"></class>
+<class name = "testNG.skipATestCase"></class>
+<class name = "testNG.suiteExample"></class><!--  -->
+<class name = "testNG.ParameterizationExample"></class>
+</classes>
+</test>
+</suite>
