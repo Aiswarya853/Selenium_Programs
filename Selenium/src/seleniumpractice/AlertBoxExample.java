@@ -5,13 +5,20 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class AlertBoxExample {
 
 	public static void main(String[] args)  {
-		// TODO Auto-generated method stub
-		System.setProperty("webdriver.chrome.driver", "C:\\Automation\\Selenium\\chromedriver.exe");
-		WebDriver driver = new ChromeDriver();
+		/*// TODO Auto-generated method stub
+		System.setProperty("webdriver.chrome.driver", "C:\\Automation\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();*/
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\Automation\\chromedriver.exe");
+		ChromeOptions opt = new ChromeOptions();
+		opt.addArguments("--remote-allow-origins=*");
+		// Launching the browser
+		WebDriver driver=new ChromeDriver(opt);
 		driver.get("http://testleaf.herokuapp.com/pages/Alert.html");
 		
 		WebElement Alertbox = driver.findElement(By.

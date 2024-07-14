@@ -1,5 +1,5 @@
 package selenium2024;
-
+//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
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -41,6 +41,7 @@ public class AlertExample {
 		WebElement alert3 = driver.findElement(By.xpath("//button[@id='j_idt88:j_idt95']/span[2]"));
 		alert3.click();
 		Alert sweetAlert = driver.switchTo().alert();
+		//Thread.sleep(2000);
 		sweetAlert.dismiss();
 		//WebElement dismiss = driver.findElement(By.xpath("//button[@id='j_idt88:j_idt98']/span[2]"));
 		//dismiss.click();

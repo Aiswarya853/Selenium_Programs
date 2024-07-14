@@ -18,7 +18,7 @@ public class windowsHandlingExample {
 		opt.addArguments("--remote-allow-origins=*");
 		// Launching the browser
 		WebDriver driver=new ChromeDriver(opt);
-		driver.get("https://www.leafground.com/window.xhtml");
+		driver.get("c/window.xhtml");
 		WebElement window1 = driver.findElement(By.xpath("//button[@id='j_idt88:new']/span"));
 
 		String oldWindow = driver.getWindowHandle();
