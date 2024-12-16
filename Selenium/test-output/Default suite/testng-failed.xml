@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="loginTestCases.CrtusrName">
+      <class name="loginTestCases.BothCrt">
         <methods>
-          <include name="loginWithCrtUsrName"/>
+          <include name="bothCrt"/>
         </methods>
-      </class> <!-- loginTestCases.CrtusrName -->
+      </class> <!-- loginTestCases.BothCrt -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

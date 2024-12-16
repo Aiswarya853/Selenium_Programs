@@ -1,89 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-02T22:44:29 IST" name="Login Suite" finished-at="2024-06-02T22:46:17 IST" duration-ms="107896">
+  <suite started-at="2024-12-16T14:09:17 IST" name="Default suite" finished-at="2024-12-16T14:09:17 IST" duration-ms="50">
     <groups>
     </groups>
-    <test started-at="2024-06-02T22:44:29 IST" name="CrtPassword" finished-at="2024-06-02T22:44:56 IST" duration-ms="26808">
-      <class name="loginTestCases.CrtPassword">
-        <test-method signature="loginWithCrtPassword(java.lang.String,java.lang.String)[pri:0, instance:loginTestCases.CrtPassword@34a3d150]" started-at="2024-06-02T22:44:29 IST" name="loginWithCrtPassword" finished-at="2024-06-02T22:44:56 IST" duration-ms="26777" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithCrtPassword -->
-      </class> <!-- loginTestCases.CrtPassword -->
-    </test> <!-- CrtPassword -->
-    <test started-at="2024-06-02T22:44:56 IST" name="BothInCrt" finished-at="2024-06-02T22:45:24 IST" duration-ms="28751">
-      <class name="loginTestCases.BothInCrt">
-        <test-method signature="bothInCrt(java.lang.String,java.lang.String)[pri:0, instance:loginTestCases.BothInCrt@217ed35e]" started-at="2024-06-02T22:44:56 IST" name="bothInCrt" finished-at="2024-06-02T22:45:24 IST" duration-ms="28745" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin1234 ]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bothInCrt -->
-      </class> <!-- loginTestCases.BothInCrt -->
-    </test> <!-- BothInCrt -->
-    <test started-at="2024-06-02T22:45:24 IST" name="BothCrt" finished-at="2024-06-02T22:45:49 IST" duration-ms="24234">
+    <test started-at="2024-12-16T14:09:17 IST" name="Default test" finished-at="2024-12-16T14:09:17 IST" duration-ms="50">
       <class name="loginTestCases.BothCrt">
-        <test-method signature="bothCrt(java.lang.String,java.lang.String)[pri:0, instance:loginTestCases.BothCrt@662ac478]" started-at="2024-06-02T22:45:24 IST" name="bothCrt" finished-at="2024-06-02T22:45:49 IST" duration-ms="24229" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin123]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="bothCrt(java.lang.String,java.lang.String)[pri:0, instance:loginTestCases.BothCrt@55182842]" started-at="2024-12-16T14:09:17 IST" name="bothCrt" finished-at="2024-12-16T14:09:17 IST" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'username' is required by @Test on method bothCrt but has not been marked @Optional or defined
+in C:\Users\Ajith\AppData\Local\Temp\testng-eclipse--260170388\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'username' is required by @Test on method bothCrt but has not been marked @Optional or defined
+in C:\Users\Ajith\AppData\Local\Temp\testng-eclipse--260170388\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:264)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:885)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:734)
+at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:946)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bothCrt -->
       </class> <!-- loginTestCases.BothCrt -->
-    </test> <!-- BothCrt -->
-    <test started-at="2024-06-02T22:45:49 IST" name="CrtusrName" finished-at="2024-06-02T22:46:17 IST" duration-ms="28027">
-      <class name="loginTestCases.CrtusrName">
-        <test-method signature="loginWithCrtUsrName(java.lang.String,java.lang.String)[pri:0, instance:loginTestCases.CrtusrName@233795b6]" started-at="2024-06-02T22:45:49 IST" name="loginWithCrtUsrName" finished-at="2024-06-02T22:46:17 IST" duration-ms="28023" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin1234]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithCrtUsrName -->
-      </class> <!-- loginTestCases.CrtusrName -->
-    </test> <!-- CrtusrName -->
-  </suite> <!-- Login Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
