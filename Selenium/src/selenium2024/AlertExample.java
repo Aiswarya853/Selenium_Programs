@@ -40,6 +40,7 @@ public class AlertExample {
 		//button[@id='j_idt88:j_idt95']/span[2]
 		WebElement alert3 = driver.findElement(By.xpath("//button[@id='j_idt88:j_idt95']/span[2]"));
 		alert3.click();
+		Thread.sleep(2000);
 		Alert sweetAlert = driver.switchTo().alert();
 		//Thread.sleep(2000);
 		sweetAlert.dismiss();
